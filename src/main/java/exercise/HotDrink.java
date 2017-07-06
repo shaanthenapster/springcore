@@ -6,6 +6,11 @@ package exercise;
 public class HotDrink {
 
     Tea tea = new Tea();
+
+    public HotDrink(Tea tea) {
+        this.tea = tea;
+    }
+
     public Tea getTea() {
         return tea;
     }
