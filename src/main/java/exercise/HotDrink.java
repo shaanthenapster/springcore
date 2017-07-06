@@ -11,6 +11,9 @@ public class HotDrink {
         this.tea = tea;
     }
 
+    public HotDrink() {
+    }
+
     public Tea getTea() {
         return tea;
     }

@@ -25,12 +25,8 @@
     <bean id="expreTea" class="exercise.ExpressTea">
         <property name="expressTeaname" value="Waah Taj"/>
     </bean>-->
-    <!--<bean  id="teaResturant" class="exercise.Resturant">
-        <property name="hotDrink"  >
-            <bean id="expresstea" class="exercise.ExpressTea">
-            </bean>
-        </property>
-    </bean>-->
+    <bean  id="teaResturant" class="exercise.HotDrink" scope="prototype">
+    </bean>
    <!-- <bean id="complexobject" class="exercise.Complex">
         <property name="list">
             <list>
