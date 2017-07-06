@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:lang="http://www.springframework.org/schema/lang"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-      http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
-      http://www.springframework.org/schema/context
-      http://www.springframework.org/schema/context/spring-context-4.0.xsd">
-
-
-
+      http://www.springframework.org/schema/beans/spring-beans-4.0.xsd http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang.xsd">
+<!--
+    <bean id="student" class="core.Student" autowire="byName">
+        <property name="id" value="1"></property>
+        <property name="name" value="Abhishek"></property>
+    </bean>
+    <bean id="streamm" class="core.Streamm" >
+        <constructor-arg value="mca" index="0">
+        </constructor-arg>
+        <constructor-arg value="2016" index="1" >
+        </constructor-arg>
+    </bean>-->
+    <bean id="database" class="exercise.Database">
+        <property name="name" value="Mysql"/>
+         <property name="port" value="3306"/>
+    </bean>
+    <bean id="tea" class="exercise.Tea">
+        <property name="teaName" value="Tata Tea"/>
+    </bean>
+    <bean id="expreTea" class="exercise.ExpressTea">
+        <property name="expressTeaname" value="Waah Taj"/>
+    </bean>
+    <bean  id="teaResturant" class="exercise.Resturant">
+        <property name="hotDrink" ref="tea">
+        </property>
+    </bean>
 </beans>
 
