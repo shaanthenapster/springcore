@@ -13,11 +13,8 @@
         <constructor-arg value="2016" index="1" >
         </constructor-arg>
     </bean>-->
-    <bean id="resturant" class="exercise.HotDrink" autowire="constructor">
-    </bean>
-    <bean id="tea" class="exercise.Tea">
-        <property name="teaName" value="Tata Tea"/>
-    </bean>
+   <!-- <bean id="resturant" class="exercise.HotDrink" autowire="constructor">
+    </bean>-->
     <!--<bean id="database" class="exercise.Database">
         <property name="name" value="Mysql"/>
          <property name="port" value="3306"/>
@@ -25,7 +22,10 @@
     <bean id="expreTea" class="exercise.ExpressTea">
         <property name="expressTeaname" value="Waah Taj"/>
     </bean>-->
-    <bean  id="teaResturant" class="exercise.HotDrink" scope="prototype">
+    <bean  id="teaResturant" class="exercise.HotDrink" scope="prototype" autowire="byName">
+    </bean>
+    <bean id="tea" class="exercise.Tea">
+        <property name="teaName" value="Tata Tea"/>
     </bean>
    <!-- <bean id="complexobject" class="exercise.Complex">
         <property name="list">
