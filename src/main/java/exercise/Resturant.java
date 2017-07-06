@@ -18,6 +18,8 @@ public class Resturant {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans.xml");
         HotDrink hotDrink = (HotDrink) applicationContext.getBean("tea");
         hotDrink.prepareHotDrink();
-    }
+          HotDrink hotDrink1 = (HotDrink) applicationContext.getBean("expreTea");
+        hotDrink1.prepareHotDrink();
+      }
 
 }

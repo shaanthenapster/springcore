@@ -25,7 +25,9 @@
         <property name="expressTeaname" value="Waah Taj"/>
     </bean>
     <bean  id="teaResturant" class="exercise.Resturant">
-        <property name="hotDrink" ref="tea">
+        <property name="hotDrink"  >
+            <bean id="expresstea" class="exercise.ExpressTea">
+            </bean>
         </property>
     </bean>
 </beans>
