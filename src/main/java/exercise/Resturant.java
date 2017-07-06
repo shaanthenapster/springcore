@@ -9,6 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Resturant {
    HotDrink hotDrink;
 
+
     public void setHotDrink(HotDrink hotDrink) {
         this.hotDrink = hotDrink;
     }
@@ -16,10 +17,11 @@ public class Resturant {
     public static void main(String[] args)
       {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans.xml");
-        HotDrink hotDrink = (HotDrink) applicationContext.getBean("tea");
-        hotDrink.prepareHotDrink();
-          HotDrink hotDrink1 = (HotDrink) applicationContext.getBean("expreTea");
-        hotDrink1.prepareHotDrink();
+        Complex complex = (Complex) applicationContext.getBean("complexobject");
+          System.out.println( " List elements are :" +complex.getList());
+          System.out.println(" Set elements are :"+complex.getSet() );
+          System.out.println(" Map elements are :"+complex.getMap() );
+
       }
 
 }

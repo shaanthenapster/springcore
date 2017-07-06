@@ -30,5 +30,29 @@
             </bean>
         </property>
     </bean>
+    <bean id="complexobject" class="exercise.Complex">
+        <property name="list">
+            <list>
+                <value> 1</value>
+                <value> 2</value>
+                <value> 3</value>
+            </list>
+        </property>
+        <property name="set">
+            <set>
+                <value>sanu </value>
+                <value> bhattacharya </value>
+                <value> harshit </value>
+            </set>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="1" value="one"/>
+                <entry key="2" value="two"/>
+                <entry key="3" value="three"/>
+            </map>
+        </property>
+
+    </bean>
 </beans>
 
