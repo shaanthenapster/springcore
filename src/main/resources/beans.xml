@@ -13,7 +13,7 @@
         <constructor-arg value="2016" index="1" >
         </constructor-arg>
     </bean>-->
-    <bean id="resturant" class="exercise.HotDrink" autowire="byName">
+    <bean id="resturant" class="exercise.HotDrink" autowire="byType">
     </bean>
     <bean id="tea" class="exercise.Tea">
         <property name="teaName" value="Tata Tea"/>
