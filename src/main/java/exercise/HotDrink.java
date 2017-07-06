@@ -1,5 +1,7 @@
 package exercise;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 /**
  * Created by shaan on 5/7/17.
  */
@@ -17,7 +19,7 @@ public class HotDrink {
     public Tea getTea() {
         return tea;
     }
-
+    @Autowired
     public void setTea(Tea tea) {
         this.tea = tea;
     }

@@ -13,7 +13,6 @@ public class Resturant {
     public HotDrink getHotDrink() {
         return hotDrink;
     }
-    @Required
     public void setHotDrink(HotDrink hotDrink) {
         this.hotDrink = hotDrink;
     }

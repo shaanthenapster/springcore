@@ -3,6 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:lang="http://www.springframework.org/schema/lang"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
       http://www.springframework.org/schema/beans/spring-beans-4.0.xsd http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang.xsd">
+    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
   <!--  <bean id="student" class="core.Student" autowire="byName">
         <property name="id" value="1"/>
         <property name="name" value="Abhishek"/>
@@ -22,7 +23,7 @@
     <bean id="expreTea" class="exercise.ExpressTea">
         <property name="expressTeaname" value="Waah Taj"/>
     </bean>-->
-    <bean  id="teaResturant" class="exercise.HotDrink" scope="prototype" autowire="byName">
+    <bean  id="teaResturant" class="exercise.HotDrink">
     </bean>
     <bean id="tea" class="exercise.Tea">
         <property name="teaName" value="Tata Tea"/>
