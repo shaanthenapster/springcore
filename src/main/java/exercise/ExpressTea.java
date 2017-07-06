@@ -3,7 +3,7 @@ package exercise;
 /**
  * Created by shaan on 5/7/17.
  */
-public class ExpressTea implements HotDrink{
+public class ExpressTea {
    String expressTeaname;
 
     public String getExpressTeaname() {
@@ -14,7 +14,7 @@ public class ExpressTea implements HotDrink{
         this.expressTeaname = expressTeaname;
     }
 
-    @Override
+
     public void prepareHotDrink()
     {
         System.out.println("Express Tea Name is :" + getExpressTeaname());

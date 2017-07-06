@@ -3,7 +3,7 @@ package exercise;
 /**
  * Created by shaan on 5/7/17.
  */
-public class Tea implements HotDrink{
+public class Tea{
   String teaName;
 
     public String getTeaName() {
@@ -14,9 +14,5 @@ public class Tea implements HotDrink{
         this.teaName = teaName;
     }
 
-    @Override
- public void prepareHotDrink()
- {
-    System.out.println("Tea name is :" + getTeaName());
- }
+
 }
