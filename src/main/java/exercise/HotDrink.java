@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
  * Created by shaan on 5/7/17.
  */
 public class HotDrink {
-
-    Tea tea = new Tea();
+    @Autowired
+    Tea tea;
 
     public HotDrink(Tea tea) {
         this.tea = tea;
@@ -19,7 +19,7 @@ public class HotDrink {
     public Tea getTea() {
         return tea;
     }
-    @Autowired
+
     public void setTea(Tea tea) {
         this.tea = tea;
     }
