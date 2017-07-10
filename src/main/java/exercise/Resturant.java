@@ -3,10 +3,12 @@ package exercise;
 import org.springframework.beans.factory.annotation.Required;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.stereotype.Controller;
 
 /**
  * Created by shaan on 5/7/17.
  */
+@Controller
 public class Resturant {
         HotDrink hotDrink;
 

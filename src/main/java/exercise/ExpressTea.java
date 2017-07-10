@@ -1,8 +1,11 @@
 package exercise;
 
+import org.springframework.stereotype.Repository;
+
 /**
  * Created by shaan on 5/7/17.
  */
+@Repository
 public class ExpressTea {
    String expressTeaname;
 
